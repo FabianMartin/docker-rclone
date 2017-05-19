@@ -1,0 +1,33 @@
+# Rclone Docker Image
+
+A Docker image with shell for [Rclone](http://rclone.org/).
+
+Rclone is a command line program to sync files and directories to and from
+
+  * Google Drive
+  * Amazon S3
+  * Openstack Swift / Rackspace cloud files / Memset Memstore
+  * Dropbox
+  * Google Cloud Storage
+  * Amazon Drive
+  * Microsoft OneDrive
+  * Hubic
+  * Backblaze B2
+  * Yandex Disk
+  * SFTP
+  * FTP
+  * The local filesystem
+
+## Installation
+
+Pull from Docker Hub:
+
+    docker pull fabianmartin/rclone
+
+Create a container using `docker run`:
+
+    docker run -ti /local/path/to/files:/files fabianmartin/rclone
+
+## Licence
+
+Code licensed under The MIT License (MIT).
