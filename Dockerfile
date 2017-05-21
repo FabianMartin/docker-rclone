@@ -1,6 +1,7 @@
 FROM alpine
 
-RUN apk add --no-cache --virtual .build-dependencies unzip wget ca-certificates \
+RUN apk add --no-cache --virtual .build-dependencies unzip wget \
+        && apk add --no-cache ca-certificates \
         && cd /tmp \
         && wget http://downloads.rclone.org/rclone-current-linux-amd64.zip \
         && unzip rclone-current-linux-amd64.zip \
